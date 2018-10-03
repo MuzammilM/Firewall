@@ -1,0 +1,5 @@
+# Iptables with only ssh ports open.
+-A INPUT -i lo -m comment --comment "Allow loopback connections" -j ACCEPT
+-A INPUT -m state --state RELATED,ESTABLISHED -j ACCEPT
+-A INPUT -p tcp -m tcp --dport 22 -j ACCEPT
+-A INPUT -j DROP
