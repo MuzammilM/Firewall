@@ -1,5 +1,5 @@
-# Add a new ip to the firewall across all the servers
-# Assumes ansible is configured with appropriate group names ; names and port numbers need to be specified in exec function.
+# Add a new ip to the firewall across all the environments ; prestaging,staging and production.
+# Assumes ansible is configured with appropriate group names in /etc/ansible/hosts ; names and port numbers need to be specified in exec function.
 # Call exec with new ip at the end.
 # Author: MuzammilM
 
